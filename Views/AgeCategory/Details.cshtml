@@ -1,0 +1,35 @@
+﻿@model KidsCenter.Models.AgeCategoryModel
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>AgeCategoryModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AgeCategoryId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AgeCategoryId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AgeCategoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AgeCategoryName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AgeCategoryId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
